@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+  <meta name="description" content="The assignment is to create a basic blog with 3 pages using html, css, javascript">
+  <meta name="author" content="Birinder Singh Bhatia">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css"> -->
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/normalize.css">
+  <link rel="stylesheet" href="/static/css/skeleton.css"> 
+ 
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/static/images/favicon.jpg">
+
+ 
+
+</head>
+<body>
+  <!-- Primary Page Layout  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="wrapper" id="wrapper">
+    <!-- header –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <header class="header">
+      <!-- Logo -->
+      <a href=/>
+        <div id="logo" >Assignment 1 - INFO 253 Web Architecture - Bir</div>
+      </a>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>          
+          <li><a href=/>Home</a></li>
+          <li><a href=aboutUs>About Us</a></li>
+          <li><a href="#wrapper">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Form div  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div>
+      {% for notification in notifications %}
+        <p id="msg">{{ notification }}</p>
+      {% endfor %}
+      <p id="msg">{{ notification }}</p>      
+    </div> 
+    <div class="row contactForm">
+      <div class="column" >
+        <!-- The above form looks like this -->
+        <form id="form1" action="/contactUs" method="post">
+          <div class="row">
+            <div class="six columns">
+              <label for="exampleName">Name*</label>
+              <input class="u-full-width" type="text" placeholder="Name" id="exampleName" name="sender_name">
+            </div>
+            <div class="six columns">
+              <label for="exampleMail">Mail Id*</label>
+              <input class="u-full-width" type="email" placeholder="Email" id="exampleMail" name="sender_mail">
+            </div>
+            <div class="six columns" id="subjectDiv">
+              <label for="exampleSubject">Subject*</label>
+              <input class="u-full-width" type="text" placeholder="Subject" id="exampleSubject" name="mail_subject">
+            </div>
+          </div>
+          <label for="exampleMessage">Message*</label>
+          <textarea class="u-full-width" placeholder="Hi Bir …" id="exampleMessage" name="mail_message"></textarea>          
+          <input id="message" class="button-primary" type="submit" value="Submit">
+        </form>
+        <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+        <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->        
+      </div>       
+    </div>
+    <!-- Footer div  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer>
+      <div class="foot" >
+        <ul >
+          <li><a href=/>Home</a></li>
+          <li><a href=aboutUs>About Us</a></li>
+          <li><a href="#wrapper">Contact Us</a></li>
+        </ul>
+      </div>      
+    </footer>    
+  </div>
+
+  <!-- Script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  <script src="/static/js/script.js"></script> 
+
+  <!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
