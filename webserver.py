@@ -37,23 +37,23 @@ def contactUs():
     """
     return render_template("contactUs.html") # Render the template located in "templates/index.html"
 
-@app.route('/blog1')
+@app.route('/blog/8-experiments-in-motivation')
 def blog1():
     return render_template("1.html") # Render the template located in "templates/index.html"
 
-@app.route('/blog2')
+@app.route('/blog/a-mindful-shift-of-focus')
 def blog2():
     return render_template("2.html") # Render the template located in "templates/index.html"
 
-@app.route('/blog3')
+@app.route('/blog/how-to-develop-an-awesome-sense-of-direction')
 def blog3():
     return render_template("3.html") # Render the template located in "templates/index.html"
 
-@app.route('/blog4')
+@app.route('/blog/training-to-be-a-good-writer')
 def blog4():
     return render_template("4.html") # Render the template located in "templates/index.html"
 
-@app.route('/blog5')
+@app.route('/blog/what-productivity-systems-wont-solve')
 def blog5():    
     return render_template("5.html") # Render the template located in "templates/index.html"
 
