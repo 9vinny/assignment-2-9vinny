@@ -64,20 +64,20 @@ Request for contact us page
 10.0.2.2 - - [16/Oct/2017 04:21:35] "GET /static/js/script.js HTTP/1.1" 200 –
 Request for javascript file for contact us page. This has code to handle validations for text fields on the contact us page.
 
-10.0.2.2 - - [16/Oct/2017 04:21:59] "GET /blog1 HTTP/1.1" 200 –
+10.0.2.2 - - [16/Oct/2017 05:36:28] "GET /blog/8-experiments-in-motivation HTTP/1.1" 200 -
 Request for page for first blog page
 
 10.0.2.2 - - [16/Oct/2017 04:21:59] "GET /static/js/script2.js HTTP/1.1" 200 –
 Request for javascript file for blog pages. This has code to handle comment functionality on blog pages.
 
-10.0.2.2 - - [16/Oct/2017 04:21:59] "GET /blog2 HTTP/1.1" 200 –
+10.0.2.2 - - [16/Oct/2017 05:37:29] "GET /blog/a-mindful-shift-of-focus HTTP/1.1" 200 -
 Request for page for second blog page
 
-10.0.2.2 - - [16/Oct/2017 04:21:59] "GET /blog3 HTTP/1.1" 200 –
+10.0.2.2 - - [16/Oct/2017 05:38:25] "GET /blog/how-to-develop-an-awesome-sense-of-direction HTTP/1.1" 200 -
 Request for page for third blog page
 
-10.0.2.2 - - [16/Oct/2017 04:21:59] "GET /blog4 HTTP/1.1" 200 –
+10.0.2.2 - - [16/Oct/2017 05:38:33] "GET /blog/training-to-be-a-good-writer HTTP/1.1" 200 -
 Request for page for fourth blog page
 
-10.0.2.2 - - [16/Oct/2017 04:21:59] "GET /blog5 HTTP/1.1" 200 –
+10.0.2.2 - - [16/Oct/2017 05:38:39] "GET /blog/what-productivity-systems-wont-solve HTTP/1.1" 200 -
 Request for page for fifth blog page
