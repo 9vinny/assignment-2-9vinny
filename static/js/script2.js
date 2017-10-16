@@ -29,7 +29,7 @@ if(document.getElementById("blogform1") != null) {
 	}
 	
 }    
-/* end blog */
+/* end blog 1*/
 
 
 
@@ -65,9 +65,7 @@ if(document.getElementById("blogform2") != null) {
 	
 }    
 
-
-
-
+/* end blog 2 */
 
 
 /* Comment for blog 3*/
@@ -98,10 +96,7 @@ if(document.getElementById("blogform3") != null) {
 		document.getElementById("comArea").innerHTML = comList1;		
 	}	
 }    
-
-
-
-
+/* end blog 3 */
 
 
 /* Comment for blog 4*/
@@ -131,10 +126,7 @@ if(document.getElementById("blogform4") != null) {
 		document.getElementById("comArea").innerHTML = comList1;		
 	}	
 }    
-
-
-
-
+/* end blog 4 */
 
 
 /* Comment for blog 5*/
@@ -166,3 +158,20 @@ if(document.getElementById("blogform5") != null) {
 	}
 	
 }    
+/* end blog 5 */
+
+window.onload = function ()
+{
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+	    if (this.readyState == 4 && this.status == 200) {
+	        var myObj = JSON.parse(this.responseText);
+	        document.getElementById("weather").innerHTML = "City: "+myObj.city.name + 
+	        "<br>Date :"+myObj.list[1].dt_txt+""
+	        +"<br>Temperature: "+Math.round(myObj.list[1].main.temp-273.15)+" Degree Celcius";
+	    }
+	};
+	xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/forecast?id=5327684&appid=49bf666a2f30d03ec49624aafc39b5a8", true);
+	xmlhttp.send();
+}
+
