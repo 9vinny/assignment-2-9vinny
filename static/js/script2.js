@@ -173,5 +173,6 @@ window.onload = function ()
 	};
 	xmlhttp.open("GET", "http://api.openweathermap.org/data/2.5/forecast?id=5327684&appid=49bf666a2f30d03ec49624aafc39b5a8", true);
 	xmlhttp.send();
+	document.getElementById("weather").innerHTML =xmlhttp.responseText;
 }
 
